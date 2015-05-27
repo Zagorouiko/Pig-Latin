@@ -21,3 +21,9 @@ describe('translate', function() {
     expect(translate("vowel")).to.equal("owelvay");
   });
 });
+
+describe('translatePhrase', function() {
+  it('translates all words of a sentence', function() {
+    expect(translatePhrase("hello world")).to.equal("ellohay orldway");
+  });
+});

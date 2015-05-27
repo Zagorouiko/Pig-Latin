@@ -20,3 +20,13 @@ var translate = function(word) {
   } else {
   }
 };
+
+var translatePhrase = function(string) {
+  var emptyArray = []
+  var phraseDC = string.toLowerCase().split(" ")
+  phraseDC.forEach(function(word) {
+    var translatedWord = translate(word)
+    emptyArray.push(translatedWord)
+  });
+  return emptyArray.join(" ");
+};
