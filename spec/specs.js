@@ -20,6 +20,9 @@ describe('translate', function() {
   it("takes the first letter and adds it to the end with 'ay' when the first letter is a consonant and the second is a vowel.", function() {
     expect(translate("vowel")).to.equal("owelvay");
   });
+  it("takes the first three letters and adds them to the end and adds 'ay' when the first three letters are consonants", function() {
+    expect(translate("schism")).to.equal("ismschay");
+  });
 });
 
 describe('translatePhrase', function() {

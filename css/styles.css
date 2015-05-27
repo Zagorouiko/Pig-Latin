@@ -1,3 +1,18 @@
 #result {
   display: none;
 }
+
+body {
+  text-align: center;
+  background-color: #000;
+  color: #8B8888;
+}
+
+.result {
+  padding: 20px;
+}
+
+.translated {
+  text-size: 24pt;
+  test-style: italic;
+}
